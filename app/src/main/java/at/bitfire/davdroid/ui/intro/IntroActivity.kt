@@ -30,12 +30,13 @@ class IntroActivity: AppIntro2() {
     companion object {
 
         fun shouldShowIntroActivity(activity: Activity): Boolean {
-            val factories = EntryPointAccessors.fromActivity(activity, IntroActivityEntryPoint::class.java).introFragmentFactories()
-            return factories.any {
-                val order = it.getOrder(activity)
-                Logger.log.fine("Found intro fragment factory ${it::class.java} with order $order")
-                order > 0
-            }
+//            val factories = EntryPointAccessors.fromActivity(activity, IntroActivityEntryPoint::class.java).introFragmentFactories()
+//            return factories.any {
+//                val order = it.getOrder(activity)
+//                Logger.log.fine("Found intro fragment factory ${it::class.java} with order $order")
+//                order > 0
+//            }
+            return false
         }
 
     }
