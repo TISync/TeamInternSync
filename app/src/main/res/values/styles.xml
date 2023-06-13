@@ -19,9 +19,9 @@
     <color name="red400">#EF5350</color>
     <color name="red700">#d32f2f</color>
 
-    <color name="primaryColor">#7cb342</color>
+    <color name="primaryColor">#03AF6A</color>
     <color name="primaryLightColor">#aee571</color>
-    <color name="primaryDarkColor">#4b830d</color>
+    <color name="primaryDarkColor">#026F45</color>
     <color name="colorOnPrimary">@android:color/black</color>
 
     <color name="secondaryColor">#ff6d00</color>

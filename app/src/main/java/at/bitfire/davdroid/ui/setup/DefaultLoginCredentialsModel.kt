@@ -46,9 +46,9 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
     val loginUseClientCertificate = MutableLiveData<Boolean>()
 
     init {
-        loginWithEmailAddress.value = true
+        loginWithEmailAddress.value = false
         loginUseClientCertificate.value = false
-        loginUseUsernamePassword.value = false
+        loginUseUsernamePassword.value = true
     }
 
     fun clearUrlError(s: Editable) {
@@ -115,11 +115,11 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
         if (intent.hasExtra(LoginActivity.EXTRA_PASSWORD))
             givenPassword = intent.getStringExtra(LoginActivity.EXTRA_PASSWORD)
 
+        loginWithEmailAddress.value = false
+        loginWithUrlAndUsername.value = true
         if (givenUrl != null) {
-            loginWithUrlAndUsername.value = true
             baseUrl.value = givenUrl
-        } else
-            loginWithEmailAddress.value = true
+        }
         username.value = givenUsername
         password.value = givenPassword
     }
