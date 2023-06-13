@@ -25,9 +25,10 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
 
     private var initialized = false
 
-    val loginWithEmailAddress = MutableLiveData<Boolean>()
-    val loginWithUrlAndUsername = MutableLiveData<Boolean>()
-    val loginAdvanced = MutableLiveData<Boolean>()
+    val loginWithEmailAddress = MutableLiveData(true)
+    val loginWithUrlAndUsername = MutableLiveData(false)
+    val loginAdvanced = MutableLiveData(false)
+    val loginGoogle = MutableLiveData(false)
 
     val baseUrl = MutableLiveData<String>()
     val baseUrlError = MutableLiveData<String>()
@@ -42,8 +43,8 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
     val certificateAlias = MutableLiveData<String>()
     val certificateAliasError = MutableLiveData<String>()
 
-    val loginUseUsernamePassword = MutableLiveData<Boolean>()
-    val loginUseClientCertificate = MutableLiveData<Boolean>()
+    val loginUseUsernamePassword = MutableLiveData(true)
+    val loginUseClientCertificate = MutableLiveData(false)
 
     init {
         loginWithEmailAddress.value = false
@@ -115,11 +116,11 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
         if (intent.hasExtra(LoginActivity.EXTRA_PASSWORD))
             givenPassword = intent.getStringExtra(LoginActivity.EXTRA_PASSWORD)
 
-        loginWithEmailAddress.value = false
-        loginWithUrlAndUsername.value = true
         if (givenUrl != null) {
+            loginWithUrlAndUsername.value = true
             baseUrl.value = givenUrl
-        }
+        } else
+            loginWithEmailAddress.value = true
         username.value = givenUsername
         password.value = givenPassword
     }
