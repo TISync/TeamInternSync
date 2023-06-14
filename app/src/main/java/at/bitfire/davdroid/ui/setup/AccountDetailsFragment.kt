@@ -64,7 +64,7 @@ class AccountDetailsFragment : Fragment() {
         val config = loginModel.configuration ?: throw IllegalStateException()
 
         // default account name
-        model.name.value =
+        model.name.value = "TI-Dienstplan" ?: //DDU
                 config.calDAV?.emails?.firstOrNull()
                         ?: loginModel.credentials?.userName
                         ?: loginModel.credentials?.certificateAlias

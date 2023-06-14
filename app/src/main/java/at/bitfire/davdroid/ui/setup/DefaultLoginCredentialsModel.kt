@@ -25,8 +25,9 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
 
     private var initialized = false
 
-    val loginWithEmailAddress = MutableLiveData(true)
-    val loginWithUrlAndUsername = MutableLiveData(false)
+
+    val loginWithEmailAddress = MutableLiveData(false)//DDU
+    val loginWithUrlAndUsername = MutableLiveData(true)//DDU
     val loginAdvanced = MutableLiveData(false)
     val loginGoogle = MutableLiveData(false)
 
@@ -116,11 +117,11 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
         if (intent.hasExtra(LoginActivity.EXTRA_PASSWORD))
             givenPassword = intent.getStringExtra(LoginActivity.EXTRA_PASSWORD)
 
+        loginWithUrlAndUsername.value = true//DDU
+        loginWithEmailAddress.value=false//DDU
         if (givenUrl != null) {
-            loginWithUrlAndUsername.value = true
             baseUrl.value = givenUrl
-        } else
-            loginWithEmailAddress.value = true
+        }
         username.value = givenUsername
         password.value = givenPassword
     }

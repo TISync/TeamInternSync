@@ -82,12 +82,13 @@ class DavResourceFinder(
         var calDavConfig: Configuration.ServiceInfo? = null
 
         try {
-            try {
-                cardDavConfig = findInitialConfiguration(Service.CARDDAV)
-            } catch (e: Exception) {
-                log.log(Level.INFO, "CardDAV service detection failed", e)
-                processException(e)
-            }
+//            DDU: CardDAV bleibt immer deaktiviert
+//            try {
+//                cardDavConfig = findInitialConfiguration(Service.CARDDAV)
+//            } catch (e: Exception) {
+//                log.log(Level.INFO, "CardDAV service detection failed", e)
+//                processException(e)
+//            }
 
             try {
                 calDavConfig = findInitialConfiguration(Service.CALDAV)

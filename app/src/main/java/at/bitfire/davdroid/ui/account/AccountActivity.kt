@@ -80,9 +80,10 @@ class AccountActivity: AppCompatActivity() {
         binding.tabLayout.setupWithViewPager(binding.viewPager)
         val tabsAdapter = TabsAdapter(this)
         binding.viewPager.adapter = tabsAdapter
-        model.cardDavService.observe(this, Observer {
-            tabsAdapter.cardDavSvcId = it
-        })
+//        DDU: CardDav deaktivieren
+//        model.cardDavService.observe(this, Observer {
+//            tabsAdapter.cardDavSvcId = it
+//        })
         model.calDavService.observe(this, Observer {
             tabsAdapter.calDavSvcId = it
         })
