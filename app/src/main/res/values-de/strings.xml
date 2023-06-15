@@ -101,7 +101,7 @@
   <string name="about_build_date">Erstellt am %s</string>
   <string name="about_copyright">© Ricki Hirner, Bernhard Stockmann (bitfire web engineering GmbH) und Mitwirkende</string>
   <string name="about_flavor_info">Diese Version ist nur zur Verteilung über Google Play bestimmt.</string>
-  <string name="about_license_info_no_warranty">Sync-+Adapter für TeamIntern-Dienspläne</string>
+  <string name="about_license_info_no_warranty">Adapter für TeamIntern-Dienstpläne</string>
   <string name="about_translations_thanks"><![CDATA[<i>Dank an: </i> %s]]></string>
   <!--global settings-->
   <string name="logging_couldnt_create_file">Protokolldatei konnte nicht angelegt werden</string>

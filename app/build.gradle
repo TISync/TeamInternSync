@@ -14,19 +14,19 @@ android {
     buildToolsVersion '33.0.2'
 
     defaultConfig {
-        applicationId "at.bitfire.davdroid"
+        applicationId "net.teamintern.tisync"
 
-        versionCode 403040000
-        versionName '4.3.4'
+        versionCode 403040002
+        versionName '4.3.4.2'
 
         buildConfigField "long", "buildTime", System.currentTimeMillis() + "L"
 
-        setProperty "archivesBaseName", "davx5-ose-" + getVersionName()
+        setProperty "archivesBaseName", "TISync-" + getVersionName()
 
         minSdkVersion 21        // Android 5
         targetSdkVersion 33     // Android 13
 
-        buildConfigField "String", "userAgent", "\"DAVx5\""
+        buildConfigField "String", "userAgent", "\"TISync\""
 
         manifestPlaceholders = [
             'appAuthRedirectScheme': applicationId
