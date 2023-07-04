@@ -93,6 +93,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.DebugInfoActivity"
             android:parentActivityName=".ui.AppSettingsActivity"
