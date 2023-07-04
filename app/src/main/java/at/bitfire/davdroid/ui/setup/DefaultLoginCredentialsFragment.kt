@@ -13,12 +13,14 @@ import android.security.KeyChain
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import at.bitfire.davdroid.R
 import at.bitfire.davdroid.databinding.LoginCredentialsFragmentBinding
 import at.bitfire.davdroid.db.Credentials
+import at.bitfire.davdroid.util.PermissionUtils
 import com.google.android.material.snackbar.Snackbar
 import dagger.Binds
 import dagger.Module
@@ -35,7 +37,10 @@ class DefaultLoginCredentialsFragment : Fragment() {
     val loginModel by activityViewModels<LoginModel>()
     val model by viewModels<DefaultLoginCredentialsModel>()
 
+    override fun onStart() {
 
+        super.onStart()
+    }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val v = LoginCredentialsFragmentBinding.inflate(inflater, container, false)
         v.lifecycleOwner = viewLifecycleOwner
@@ -46,6 +51,10 @@ class DefaultLoginCredentialsFragment : Fragment() {
             activity?.intent?.let { model.initialize(it) }
 
         v.loginUrlBaseUrlEdittext.setAdapter(DefaultLoginCredentialsModel.LoginUrlAdapter(requireActivity()))
+
+        //DDU
+        val requestPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {               }
+        requestPermission.launch(PermissionUtils.CALENDAR_PERMISSIONS)
 
         v.selectCertificate.setOnClickListener {
             KeyChain.choosePrivateKeyAlias(requireActivity(), { alias ->
