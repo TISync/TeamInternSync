@@ -16,8 +16,8 @@ android {
     defaultConfig {
         applicationId "net.teamintern.tisync"
 
-        versionCode 403040002
-        versionName '4.3.4.2'
+        versionCode 403040006
+        versionName '4.3.4.6'
 
         buildConfigField "long", "buildTime", System.currentTimeMillis() + "L"
 
