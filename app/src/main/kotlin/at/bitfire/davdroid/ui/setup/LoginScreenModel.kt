@@ -93,11 +93,12 @@ class LoginScreenModel @AssistedInject constructor(
             Page.DetectResources -> {
                 // continue to account details
                 val emails = foundConfig?.calDAV?.emails.orEmpty().toSet()
-                val initialAccountName = emails.firstOrNull()
-                    ?: loginInfo.suggestedAccountName
-                    ?: loginInfo.credentials?.username
-                    ?: loginInfo.baseUri?.host
-                    ?: ""
+//                val initialAccountName = emails.firstOrNull()
+//                    ?: loginInfo.suggestedAccountName
+//                    ?: loginInfo.credentials?.username
+//                    ?: loginInfo.baseUri?.host
+//                    ?: ""
+                val initialAccountName = "TI-Dienstplan" //DDU angepasst
                 updateAccountNameAndEmails(initialAccountName, emails)
                 updateGroupMethod(loginInfo.suggestedGroupMethod)
                 page = Page.AccountDetails
