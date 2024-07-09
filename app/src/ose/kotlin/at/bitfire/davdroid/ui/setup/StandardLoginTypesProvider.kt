@@ -14,12 +14,12 @@ class StandardLoginTypesProvider @Inject constructor() : LoginTypesProvider {
     companion object {
         val genericLoginTypes = listOf(
             UrlLogin,
-            EmailLogin,
+            //EmailLogin,//DDU Deaktiviert
             AdvancedLogin
         )
 
         val specificLoginTypes = listOf(
-            GoogleLogin,
+            //GoogleLogin,//DDU Deaktiviert
             NextcloudLogin
         )
     }
