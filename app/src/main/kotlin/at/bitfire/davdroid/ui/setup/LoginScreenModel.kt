@@ -217,7 +217,7 @@ class LoginScreenModel @AssistedInject constructor(
     // UI element state – last page: account details
 
     data class AccountDetailsUiState(
-        val accountName: String = "",
+        val accountName: String = "TI-Dienstplan",//DDU: Standardwert geaendert
         val suggestedAccountNames: Set<String> = emptySet(),
         val accountNameExists: Boolean = false,
         val groupMethod: GroupMethod = GroupMethod.GROUP_VCARDS,

@@ -183,6 +183,8 @@ fun AccountDetailsPageContent(
             }
 
             // group type selector
+            //DDU deaktiviert
+            /*
             Text(
                 stringResource(R.string.login_account_contact_group_method),
                 style = MaterialTheme.typography.bodyLarge,
@@ -208,7 +210,11 @@ fun AccountDetailsPageContent(
                     )
                 }
             }
+
+             */
         }
+
+
     }
 }
 
