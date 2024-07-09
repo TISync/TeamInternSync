@@ -97,7 +97,8 @@ fun AccountScreen(
         }
     )
 
-    val cardDavService by model.cardDavSvc.collectAsStateWithLifecycle()
+    //val cardDavService by model.cardDavSvc.collectAsStateWithLifecycle()
+    var cardDavService = null;//DDU CardDav ausschalten
     val addressBooks = model.addressBooks.collectAsLazyPagingItems()
 
     val calDavService by model.calDavSvc.collectAsStateWithLifecycle()
