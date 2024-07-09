@@ -40,7 +40,7 @@ open class OseAccountsDrawerHandler @Inject constructor(): AccountsDrawerHandler
 
         // Most important entries
         ImportantEntries(snackbarHostState)
-
+/* DDU deaktiviert: 
         // News
         MenuHeading(R.string.navigation_drawer_news_updates)
         MenuEntry(
@@ -85,6 +85,8 @@ open class OseAccountsDrawerHandler @Inject constructor(): AccountsDrawerHandler
                     .build().toString())
             }
         )
+
+ */
         MenuEntry(
             icon = Icons.Default.Info,
             title = stringResource(R.string.navigation_drawer_manual),
