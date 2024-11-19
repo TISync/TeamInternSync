@@ -12,16 +12,19 @@ import javax.inject.Inject
 class StandardLoginTypesProvider @Inject constructor() : LoginTypesProvider {
 
     companion object {
+        //DDU
         val genericLoginTypes = listOf(
-            UrlLogin,
-            EmailLogin,
-            AdvancedLogin
-        )
-
-        val specificLoginTypes = listOf(
-            GoogleLogin,
-            NextcloudLogin
-        )
+            UrlLogin)
+//        val genericLoginTypes = listOf(
+//            UrlLogin,
+//            EmailLogin,
+//            AdvancedLogin
+//        )
+//
+//        val specificLoginTypes = listOf(
+//            GoogleLogin,
+//            NextcloudLogin
+//        )
     }
 
     override val defaultLoginType = UrlLogin

@@ -60,7 +60,7 @@
         <activity android:name="net.openid.appauth.RedirectUriReceiverActivity"
             tools:node="remove" tools:selector="net.openid.appauth"/>
 
-        <activity android:name=".ui.intro.IntroActivity" />
+<!--      DDU  <activity android:name=".ui.intro.IntroActivity" />-->
         <activity
             android:name=".ui.AccountsActivity"
             android:exported="true">
@@ -152,15 +152,15 @@
         <activity
             android:name=".ui.account.WifiPermissionsActivity"
             android:parentActivityName=".ui.account.AccountSettingsActivity" />
-
-        <activity
-            android:name=".ui.webdav.WebdavMountsActivity"
-            android:exported="true"
-            android:parentActivityName=".ui.AccountsActivity" />
-        <activity
-            android:name=".ui.webdav.AddWebdavMountActivity"
-            android:parentActivityName=".ui.webdav.WebdavMountsActivity"
-            android:windowSoftInputMode="adjustResize" />
+<!--DDU-->
+<!--        <activity-->
+<!--            android:name=".ui.webdav.WebdavMountsActivity"-->
+<!--            android:exported="true"-->
+<!--            android:parentActivityName=".ui.AccountsActivity" />-->
+<!--        <activity-->
+<!--            android:name=".ui.webdav.AddWebdavMountActivity"-->
+<!--            android:parentActivityName=".ui.webdav.WebdavMountsActivity"-->
+<!--            android:windowSoftInputMode="adjustResize" />-->
 
         <!-- account type "DAVx⁵" -->
         <service

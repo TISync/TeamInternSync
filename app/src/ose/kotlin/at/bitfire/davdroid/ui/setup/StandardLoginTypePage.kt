@@ -52,18 +52,18 @@ fun StandardLoginTypePage(
                     selected = type == selectedLoginType,
                     onSelect = { onSelectLoginType(type) }
                 )
-
-            Text(
-                stringResource(R.string.login_provider_login),
-                style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
-            )
-            for (type in StandardLoginTypesProvider.specificLoginTypes)
-                LoginTypeSelector(
-                    title = stringResource(type.title),
-                    selected = type == selectedLoginType,
-                    onSelect = { onSelectLoginType(type) }
-                )
+//DDU
+//            Text(
+//                stringResource(R.string.login_provider_login),
+//                style = MaterialTheme.typography.headlineSmall,
+//                modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+//            )
+//            for (type in StandardLoginTypesProvider.specificLoginTypes)
+//                LoginTypeSelector(
+//                    title = stringResource(type.title),
+//                    selected = type == selectedLoginType,
+//                    onSelect = { onSelectLoginType(type) }
+//                )
 
             HorizontalDivider(Modifier.padding(vertical = 12.dp))
 
