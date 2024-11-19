@@ -96,7 +96,8 @@ fun AccountScreen(
         }
     )
 
-    val cardDavService by model.cardDavSvc.collectAsStateWithLifecycle()
+    val cardDavService =null //DDU by model.cardDavSvc.collectAsStateWithLifecycle()
+    
     val addressBooks = model.addressBooks.collectAsLazyPagingItems()
 
     val calDavService by model.calDavSvc.collectAsStateWithLifecycle()
