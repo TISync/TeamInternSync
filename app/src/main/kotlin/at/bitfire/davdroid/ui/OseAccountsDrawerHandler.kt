@@ -42,49 +42,51 @@ open class OseAccountsDrawerHandler @Inject constructor(): AccountsDrawerHandler
         ImportantEntries(snackbarHostState)
 
         // News
-        MenuHeading(R.string.navigation_drawer_news_updates)
-        MenuEntry(
-            icon = painterResource(R.drawable.mastodon),
-            title = Constants.FEDIVERSE_HANDLE,
-            onClick = {
-                uriHandler.openUri(FEDIVERSE_URL.toString())
-            }
-        )
-
-        // Tools
-        Tools()
-
-        // Support the project
-        MenuHeading(R.string.navigation_drawer_support_project)
-        Contribute(onContribute = {
-            uriHandler.openUri(
-                Constants.HOMEPAGE_URL.buildUpon()
-                    .appendPath(Constants.HOMEPAGE_PATH_OPEN_SOURCE)
-                    .withStatParams(WEB_CONTEXT)
-                    .build().toString()
-            )
-        })
-        MenuEntry(
-            icon = Icons.Default.Forum,
-            title = stringResource(R.string.navigation_drawer_community),
-            onClick = {
-                uriHandler.openUri(COMMUNITY_URL.toString())
-            }
-        )
+        //DDU
+//        MenuHeading(R.string.navigation_drawer_news_updates)
+//        MenuEntry(
+//            icon = painterResource(R.drawable.mastodon),
+//            title = Constants.FEDIVERSE_HANDLE,
+//            onClick = {
+//                uriHandler.openUri(FEDIVERSE_URL.toString())
+//            }
+//        )
+//
+//        // Tools
+//        Tools()
+//
+//        // Support the project
+//        MenuHeading(R.string.navigation_drawer_support_project)
+//        Contribute(onContribute = {
+//            uriHandler.openUri(
+//                Constants.HOMEPAGE_URL.buildUpon()
+//                    .appendPath(Constants.HOMEPAGE_PATH_OPEN_SOURCE)
+//                    .withStatParams(WEB_CONTEXT)
+//                    .build().toString()
+//            )
+//        })
+//        MenuEntry(
+//            icon = Icons.Default.Forum,
+//            title = stringResource(R.string.navigation_drawer_community),
+//            onClick = {
+//                uriHandler.openUri(COMMUNITY_URL.toString())
+//            }
+//        )
 
 
         // External links
         MenuHeading(R.string.navigation_drawer_external_links)
-        MenuEntry(
-            icon = Icons.Default.Home,
-            title = stringResource(R.string.navigation_drawer_website),
-            onClick = {
-                uriHandler.openUri(Constants.HOMEPAGE_URL
-                    .buildUpon()
-                    .withStatParams(WEB_CONTEXT)
-                    .build().toString())
-            }
-        )
+        //DDU
+//        MenuEntry(
+//            icon = Icons.Default.Home,
+//            title = stringResource(R.string.navigation_drawer_website),
+//            onClick = {
+//                uriHandler.openUri(Constants.HOMEPAGE_URL
+//                    .buildUpon()
+//                    .withStatParams(WEB_CONTEXT)
+//                    .build().toString())
+//            }
+//        )
         MenuEntry(
             icon = Icons.Default.Info,
             title = stringResource(R.string.navigation_drawer_manual),
@@ -92,18 +94,19 @@ open class OseAccountsDrawerHandler @Inject constructor(): AccountsDrawerHandler
                 uriHandler.openUri(MANUAL_URL.toString())
             }
         )
-        MenuEntry(
-            icon = Icons.AutoMirrored.Default.HelpCenter,
-            title = stringResource(R.string.navigation_drawer_faq),
-            onClick = {
-                uriHandler.openUri(
-                    Constants.HOMEPAGE_URL.buildUpon()
-                        .appendPath(Constants.HOMEPAGE_PATH_FAQ)
-                        .withStatParams(WEB_CONTEXT)
-                        .build().toString()
-                )
-            }
-        )
+        //DDU
+//        MenuEntry(
+//            icon = Icons.AutoMirrored.Default.HelpCenter,
+//            title = stringResource(R.string.navigation_drawer_faq),
+//            onClick = {
+//                uriHandler.openUri(
+//                    Constants.HOMEPAGE_URL.buildUpon()
+//                        .appendPath(Constants.HOMEPAGE_PATH_FAQ)
+//                        .withStatParams(WEB_CONTEXT)
+//                        .build().toString()
+//                )
+//            }
+//        )
         MenuEntry(
             icon = Icons.Default.CloudOff,
             title = stringResource(R.string.navigation_drawer_privacy_policy),

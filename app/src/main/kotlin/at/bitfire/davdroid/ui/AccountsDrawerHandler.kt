@@ -145,16 +145,17 @@ abstract class AccountsDrawerHandler {
 
     @Composable
     fun Tools() {
-        val context = LocalContext.current
-
-        MenuHeading(R.string.navigation_drawer_tools)
-        MenuEntry(
-            icon = Icons.Default.Storage,
-            title = stringResource(R.string.webdav_mounts_title),
-            onClick = {
-                context.startActivity(Intent(context, WebdavMountsActivity::class.java))
-            }
-        )
+        //DDU
+//        val context = LocalContext.current
+//
+//        MenuHeading(R.string.navigation_drawer_tools)
+//        MenuEntry(
+//            icon = Icons.Default.Storage,
+//            title = stringResource(R.string.webdav_mounts_title),
+//            onClick = {
+//                context.startActivity(Intent(context, WebdavMountsActivity::class.java))
+//            }
+//        )
     }
 
 

@@ -106,7 +106,7 @@ fun UrlLoginScreen(
                 value = url,
                 onValueChange = onSetUrl,
                 label = { Text(stringResource(R.string.login_base_url)) },
-                placeholder = { Text("dav.example.com/path") },
+                placeholder = { Text("teamintern.net") },//DDU
                 singleLine = true,
                 leadingIcon = {
                     Icon(Icons.Default.Folder, null)
