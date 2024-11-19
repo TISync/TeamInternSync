@@ -9,7 +9,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import at.bitfire.davdroid.ui.account.AccountActivity
-import at.bitfire.davdroid.ui.intro.IntroActivity
+//import at.bitfire.davdroid.ui.intro.IntroActivity
 import at.bitfire.davdroid.ui.setup.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -20,11 +20,11 @@ class AccountsActivity: AppCompatActivity() {
 
     @Inject
     lateinit var accountsDrawerHandler: AccountsDrawerHandler
-
-    private val introActivityLauncher = registerForActivityResult(IntroActivity.Contract) { cancelled ->
-        if (cancelled)
-            finish()
-    }
+//DDU
+//    private val introActivityLauncher = registerForActivityResult(IntroActivity.Contract) { cancelled ->
+//        if (cancelled)
+//            finish()
+//    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +37,7 @@ class AccountsActivity: AppCompatActivity() {
             AccountsScreen(
                 initialSyncAccounts = syncAccounts,
                 onShowAppIntro = {
-                    introActivityLauncher.launch(null)
+                    //introActivityLauncher.launch(null)
                 },
                 accountsDrawerHandler = accountsDrawerHandler,
                 onAddAccount = {
