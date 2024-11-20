@@ -151,35 +151,35 @@ fun PermissionsScreen(
                     modifier = Modifier.padding(vertical = 4.dp)
                 )
             }
-
-            val allPermissions = mutableListOf<String>()
-            allPermissions.addAll(PermissionUtils.CONTACT_PERMISSIONS)
-            allPermissions.addAll(PermissionUtils.CALENDAR_PERMISSIONS)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
-                allPermissions += Manifest.permission.POST_NOTIFICATIONS
-            if (openTasksAvailable == true)
-                allPermissions.addAll(TaskProvider.PERMISSIONS_OPENTASKS)
-            if (tasksOrgAvailable == true)
-                allPermissions.addAll(TaskProvider.PERMISSIONS_TASKS_ORG)
-            if (jtxAvailable == true)
-                allPermissions.addAll(TaskProvider.PERMISSIONS_JTX)
-            PermissionSwitchRow(
-                text = stringResource(R.string.permissions_all_title),
-                permissions = allPermissions,
-                summaryWhenGranted = stringResource(R.string.permissions_all_status_on),
-                summaryWhenNotGranted = stringResource(R.string.permissions_all_status_off),
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier.padding(vertical = 4.dp)
-            )
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
-                PermissionSwitchRow(
-                    text = stringResource(R.string.permissions_notification_title),
-                    summaryWhenGranted = stringResource(R.string.permissions_notification_status_on),
-                    summaryWhenNotGranted = stringResource(R.string.permissions_notification_status_off),
-                    permissions = listOf(Manifest.permission.POST_NOTIFICATIONS),
-                    modifier = Modifier.padding(vertical = 4.dp)
-                )
+//DDU deaktiveren
+//            val allPermissions = mutableListOf<String>()
+//            allPermissions.addAll(PermissionUtils.CONTACT_PERMISSIONS)
+//            allPermissions.addAll(PermissionUtils.CALENDAR_PERMISSIONS)
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
+//                allPermissions += Manifest.permission.POST_NOTIFICATIONS
+//            if (openTasksAvailable == true)
+//                allPermissions.addAll(TaskProvider.PERMISSIONS_OPENTASKS)
+//            if (tasksOrgAvailable == true)
+//                allPermissions.addAll(TaskProvider.PERMISSIONS_TASKS_ORG)
+//            if (jtxAvailable == true)
+//                allPermissions.addAll(TaskProvider.PERMISSIONS_JTX)
+//            PermissionSwitchRow(
+//                text = stringResource(R.string.permissions_all_title),
+//                permissions = allPermissions,
+//                summaryWhenGranted = stringResource(R.string.permissions_all_status_on),
+//                summaryWhenNotGranted = stringResource(R.string.permissions_all_status_off),
+//                fontWeight = FontWeight.Bold,
+//                modifier = Modifier.padding(vertical = 4.dp)
+//            )
+//DDU deaktiveren
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
+//                PermissionSwitchRow(
+//                    text = stringResource(R.string.permissions_notification_title),
+//                    summaryWhenGranted = stringResource(R.string.permissions_notification_status_on),
+//                    summaryWhenNotGranted = stringResource(R.string.permissions_notification_status_off),
+//                    permissions = listOf(Manifest.permission.POST_NOTIFICATIONS),
+//                    modifier = Modifier.padding(vertical = 4.dp)
+//                )
 
             PermissionSwitchRow(
                 text = stringResource(R.string.permissions_calendar_title),
@@ -188,13 +188,14 @@ fun PermissionsScreen(
                 permissions = PermissionUtils.CALENDAR_PERMISSIONS.toList(),
                 modifier = Modifier.padding(vertical = 4.dp)
             )
-            PermissionSwitchRow(
-                text = stringResource(R.string.permissions_contacts_title),
-                summaryWhenGranted = stringResource(R.string.permissions_contacts_status_on),
-                summaryWhenNotGranted = stringResource(R.string.permissions_contacts_status_off),
-                permissions = PermissionUtils.CONTACT_PERMISSIONS.toList(),
-                modifier = Modifier.padding(vertical = 4.dp)
-            )
+            //DDU deaktiveren
+//            PermissionSwitchRow(
+//                text = stringResource(R.string.permissions_contacts_title),
+//                summaryWhenGranted = stringResource(R.string.permissions_contacts_status_on),
+//                summaryWhenNotGranted = stringResource(R.string.permissions_contacts_status_off),
+//                permissions = PermissionUtils.CONTACT_PERMISSIONS.toList(),
+//                modifier = Modifier.padding(vertical = 4.dp)
+//            )
 
             if (jtxAvailable == true)
                 PermissionSwitchRow(
