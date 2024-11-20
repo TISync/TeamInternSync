@@ -132,7 +132,7 @@
   <string name="account_list_low_storage">Wenig Speicherplatz. Android wird lokale Änderungen nicht sofort synchronisieren, sondern bei der nächsten regulären Synchronisierung.</string>
   <string name="account_list_manage_storage">Speicherplatz verwalten</string>
   <string name="account_list_welcome">Wilkommen bei TISync</string>
-  <string name="account_list_empty">Herzlich willkommen!\n\nSie können jetzt ein CalDAV/CardDAV-Konto hinzufügen.</string>
+  <string name="account_list_empty">Sie können jetzt ein TeamIntern-Dientplan hinzufügen.</string>
   <string name="accounts_sync_all">Alle Konten synchronisieren</string>
   <!--RefreshCollectionsWorker-->
   <string name="refresh_collections_worker_refresh_failed">Diensterkennung fehlgeschlagen</string>
@@ -216,6 +216,7 @@
   <string name="account_install_icsx5">ICSx⁵ installieren</string>
   <!--AddAccountActivity-->
   <string name="login_title">Konto hinzufügen</string>
+  <string name="login_privacy_hint">Alle Daten werden nur zwischen Ihrem Server und Ihrem Gerät übertragen. %1$s wird sie nirgendwo anders hinschicken.</string>
   <string name="login_generic_login">Allgemeine Anmeldung</string>
   <string name="login_provider_login">Provider-spezifische Anmeldung</string>
   <string name="login_continue">Fortfahren</string>
