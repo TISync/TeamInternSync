@@ -50,8 +50,8 @@ class AccountSettingsModel @AssistedInject constructor(
         val syncIntervalCalendars: Long? = null,
         val syncIntervalTasks: Long? = null,
 
-        val syncWifiOnly: Boolean = false,
-        val syncWifiOnlySSIDs: List<String>? = null,
+        //DDU wifiOnly deaktivieren val syncWifiOnly: Boolean = false,
+        //DDU wifiOnly deaktivieren val syncWifiOnlySSIDs: List<String>? = null,
         val ignoreVpns: Boolean = false,
 
         val credentials: Credentials = Credentials(),
@@ -100,8 +100,8 @@ class AccountSettingsModel @AssistedInject constructor(
             syncIntervalCalendars = accountSettings.getSyncInterval(CalendarContract.AUTHORITY),
             syncIntervalTasks = tasksProvider?.let { accountSettings.getSyncInterval(it.authority) },
 
-            syncWifiOnly = accountSettings.getSyncWifiOnly(),
-            syncWifiOnlySSIDs = accountSettings.getSyncWifiOnlySSIDs(),
+            //DDU wifiOnly deaktivieren syncWifiOnly = accountSettings.getSyncWifiOnly(),
+            //DDU wifiOnly deaktivieren syncWifiOnlySSIDs = accountSettings.getSyncWifiOnlySSIDs(),
             ignoreVpns = accountSettings.getIgnoreVpns(),
 
             credentials = accountSettings.credentials(),
@@ -138,15 +138,16 @@ class AccountSettingsModel @AssistedInject constructor(
         }
     }
 
-    fun updateSyncWifiOnly(wifiOnly: Boolean) = CoroutineScope(Dispatchers.Default).launch {
-        accountSettings.setSyncWiFiOnly(wifiOnly)
-        reload()
-    }
 
-    fun updateSyncWifiOnlySSIDs(ssids: List<String>?) = CoroutineScope(Dispatchers.Default).launch {
-        accountSettings.setSyncWifiOnlySSIDs(ssids)
-        reload()
-    }
+//    fun updateSyncWifiOnly(wifiOnly: Boolean) = CoroutineScope(Dispatchers.Default).launch {
+//        accountSettings.setSyncWiFiOnly(wifiOnly)
+//        reload()
+//    }
+//
+//    fun updateSyncWifiOnlySSIDs(ssids: List<String>?) = CoroutineScope(Dispatchers.Default).launch {
+//        accountSettings.setSyncWifiOnlySSIDs(ssids)
+//        reload()
+//    }
 
     fun updateIgnoreVpns(ignoreVpns: Boolean) = CoroutineScope(Dispatchers.Default).launch {
         accountSettings.setIgnoreVpns(ignoreVpns)

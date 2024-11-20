@@ -82,18 +82,18 @@ fun AccountSettingsScreen(
             onNavUp = onNavUp,
 
             // Sync settings
-            canAccessWifiSsid = canAccessWifiSsid,
-            onSyncWifiOnlyPermissionsAction = onNavWifiPermissionsScreen,
+            //DDU wifiOnly deaktivieren canAccessWifiSsid = canAccessWifiSsid,
+            //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction = onNavWifiPermissionsScreen,
             contactsSyncInterval = uiState.syncIntervalContacts,
             onUpdateContactsSyncInterval = model::updateContactsSyncInterval,
             calendarSyncInterval = uiState.syncIntervalCalendars,
             onUpdateCalendarSyncInterval = model::updateCalendarSyncInterval,
             tasksSyncInterval = uiState.syncIntervalTasks,
             onUpdateTasksSyncInterval = model::updateTasksSyncInterval,
-            syncOnlyOnWifi = uiState.syncWifiOnly,
-            onUpdateSyncOnlyOnWifi = model::updateSyncWifiOnly,
-            onlyOnSsids = uiState.syncWifiOnlySSIDs,
-            onUpdateOnlyOnSsids = model::updateSyncWifiOnlySSIDs,
+            //DDU wifiOnly deaktivieren syncOnlyOnWifi = uiState.syncWifiOnly,
+            //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi = model::updateSyncWifiOnly,
+            //DDU wifiOnly deaktivieren onlyOnSsids = uiState.syncWifiOnlySSIDs,
+            //DDU wifiOnly deaktivierenonUpdateOnlyOnSsids = model::updateSyncWifiOnlySSIDs,
             ignoreVpns = uiState.ignoreVpns,
             onUpdateIgnoreVpns = model::updateIgnoreVpns,
 
@@ -125,18 +125,18 @@ fun AccountSettingsScreen(
     accountName: String,
 
     // Sync settings
-    canAccessWifiSsid: Boolean,
-    onSyncWifiOnlyPermissionsAction: () -> Unit,
+    //DDU wifiOnly deaktivieren canAccessWifiSsid: Boolean,
+    //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction: () -> Unit,
     contactsSyncInterval: Long?,
     onUpdateContactsSyncInterval: ((Long) -> Unit) = {},
     calendarSyncInterval: Long?,
     onUpdateCalendarSyncInterval: ((Long) -> Unit) = {},
     tasksSyncInterval: Long?,
     onUpdateTasksSyncInterval: ((Long) -> Unit) = {},
-    syncOnlyOnWifi: Boolean,
-    onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
-    onlyOnSsids: List<String>?,
-    onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
+    //DDU wifiOnly deaktivieren syncOnlyOnWifi: Boolean,
+    //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
+    //DDU wifiOnly deaktivieren onlyOnSsids: List<String>?,
+    //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
     ignoreVpns: Boolean,
     onUpdateIgnoreVpns: (Boolean) -> Unit = {},
 
@@ -197,18 +197,18 @@ fun AccountSettingsScreen(
                 snackbarHostState = snackbarHostState,
 
                 // Sync settings
-                canAccessWifiSsid = canAccessWifiSsid,
-                onSyncWifiOnlyPermissionsAction = onSyncWifiOnlyPermissionsAction,
+                //DDU wifiOnly deaktivieren canAccessWifiSsid = canAccessWifiSsid,
+                //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction = onSyncWifiOnlyPermissionsAction,
                 contactsSyncInterval = contactsSyncInterval,
                 onUpdateContactsSyncInterval = onUpdateContactsSyncInterval,
                 calendarSyncInterval = calendarSyncInterval,
                 onUpdateCalendarSyncInterval = onUpdateCalendarSyncInterval,
                 taskSyncInterval = tasksSyncInterval,
                 onUpdateTaskSyncInterval = onUpdateTasksSyncInterval,
-                syncOnlyOnWifi = syncOnlyOnWifi,
-                onUpdateSyncOnlyOnWifi = onUpdateSyncOnlyOnWifi,
-                onlyOnSsids = onlyOnSsids,
-                onUpdateOnlyOnSsids = onUpdateOnlyOnSsids,
+                //DDU wifiOnly deaktivieren syncOnlyOnWifi = syncOnlyOnWifi,
+                //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi = onUpdateSyncOnlyOnWifi,
+                //DDU wifiOnly deaktivieren onlyOnSsids = onlyOnSsids,
+                //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids = onUpdateOnlyOnSsids,
                 ignoreVpns = ignoreVpns,
                 onUpdateIgnoreVpns = onUpdateIgnoreVpns,
 
@@ -239,18 +239,18 @@ fun AccountSettings_FromModel(
     snackbarHostState: SnackbarHostState,
 
     // Sync settings
-    canAccessWifiSsid: Boolean,
-    onSyncWifiOnlyPermissionsAction: () -> Unit,
+    //DDU wifiOnly deaktivieren canAccessWifiSsid: Boolean,
+    //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction: () -> Unit,
     contactsSyncInterval: Long?,
     onUpdateContactsSyncInterval: ((Long) -> Unit) = {},
     calendarSyncInterval: Long?,
     onUpdateCalendarSyncInterval: ((Long) -> Unit) = {},
     taskSyncInterval: Long?,
     onUpdateTaskSyncInterval: ((Long) -> Unit) = {},
-    syncOnlyOnWifi: Boolean,
-    onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
-    onlyOnSsids: List<String>?,
-    onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
+    //DDU wifiOnly deaktivieren syncOnlyOnWifi: Boolean,
+    //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
+    //DDU wifiOnly deaktivieren onlyOnSsids: List<String>?,
+    //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
     ignoreVpns: Boolean,
     onUpdateIgnoreVpns: (Boolean) -> Unit = {},
 
@@ -274,18 +274,18 @@ fun AccountSettings_FromModel(
 ) {
     Column(Modifier.padding(8.dp)) {
         SyncSettings(
-            canAccessWifiSsid = canAccessWifiSsid,
-            onSyncWifiOnlyPermissionsAction = onSyncWifiOnlyPermissionsAction,
+            //DDU wifiOnly deaktivieren canAccessWifiSsid = canAccessWifiSsid,
+            //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction = onSyncWifiOnlyPermissionsAction,
             contactsSyncInterval = contactsSyncInterval,
             onUpdateContactsSyncInterval = onUpdateContactsSyncInterval,
             calendarSyncInterval = calendarSyncInterval,
             onUpdateCalendarSyncInterval = onUpdateCalendarSyncInterval,
             taskSyncInterval = taskSyncInterval,
             onUpdateTaskSyncInterval = onUpdateTaskSyncInterval,
-            syncOnlyOnWifi = syncOnlyOnWifi,
-            onUpdateSyncOnlyOnWifi = onUpdateSyncOnlyOnWifi,
-            onlyOnSsids = onlyOnSsids,
-            onUpdateOnlyOnSsids = onUpdateOnlyOnSsids,
+            //DDU wifiOnly deaktivieren syncOnlyOnWifi = syncOnlyOnWifi,
+            //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi = onUpdateSyncOnlyOnWifi,
+            //DDU wifiOnly deaktivieren onlyOnSsids = onlyOnSsids,
+            //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids = onUpdateOnlyOnSsids,
             ignoreVpns = ignoreVpns,
             onUpdateIgnoreVpns = onUpdateIgnoreVpns
         )
@@ -318,18 +318,18 @@ fun AccountSettings_FromModel(
 
 @Composable
 fun SyncSettings(
-    canAccessWifiSsid: Boolean,
-    onSyncWifiOnlyPermissionsAction: () -> Unit,
+    //DDU wifiOnly deaktivieren canAccessWifiSsid: Boolean,
+    //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction: () -> Unit,
     contactsSyncInterval: Long?,
     onUpdateContactsSyncInterval: ((Long) -> Unit) = {},
     calendarSyncInterval: Long?,
     onUpdateCalendarSyncInterval: ((Long) -> Unit) = {},
     taskSyncInterval: Long?,
     onUpdateTaskSyncInterval: ((Long) -> Unit) = {},
-    syncOnlyOnWifi: Boolean,
-    onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
-    onlyOnSsids: List<String>?,
-    onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
+    //DDU wifiOnly deaktivieren syncOnlyOnWifi: Boolean,
+    //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi: (Boolean) -> Unit = {},
+    //DDU wifiOnly deaktivieren onlyOnSsids: List<String>?,
+    //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids: (List<String>) -> Unit = {},
     ignoreVpns: Boolean,
     onUpdateIgnoreVpns: (Boolean) -> Unit = {}
 ) {
@@ -359,62 +359,62 @@ fun SyncSettings(
                 syncInterval = taskSyncInterval,
                 onUpdateSyncInterval = onUpdateTaskSyncInterval
             )
-
-        SwitchSetting(
-            icon = Icons.Default.Wifi,
-            name = stringResource(R.string.settings_sync_wifi_only),
-            summaryOn = stringResource(R.string.settings_sync_wifi_only_on),
-            summaryOff = stringResource(R.string.settings_sync_wifi_only_off),
-            checked = syncOnlyOnWifi,
-            onCheckedChange = onUpdateSyncOnlyOnWifi
-        )
-
-        var showWifiOnlySsidsDialog by remember { mutableStateOf(false) }
-        Setting(
-            icon = null,
-            name = stringResource(R.string.settings_sync_wifi_only_ssids),
-            enabled = syncOnlyOnWifi,
-            summary =
-            if (onlyOnSsids != null)
-                stringResource(R.string.settings_sync_wifi_only_ssids_on, onlyOnSsids.joinToString(", "))
-            else
-                stringResource(R.string.settings_sync_wifi_only_ssids_off),
-            onClick = {
-                showWifiOnlySsidsDialog = true
-            }
-        )
-        if (showWifiOnlySsidsDialog)
-            EditTextInputDialog(
-                title = stringResource(R.string.settings_sync_wifi_only_ssids_message),
-                initialValue = onlyOnSsids?.joinToString(", ") ?: "",
-                onValueEntered = { newValue ->
-                    val newSsids = newValue.split(',')
-                        .map { it.trim() }
-                        .distinct()
-                    onUpdateOnlyOnSsids(newSsids)
-                    showWifiOnlySsidsDialog = false
-                },
-                onDismiss = { showWifiOnlySsidsDialog = false }
-            )
-
-        if (LocalInspectionMode.current || onlyOnSsids != null)
-            ActionCard(
-                icon = if (!canAccessWifiSsid) Icons.Default.SyncProblem else Icons.Default.Info,
-                actionText = stringResource(R.string.settings_sync_wifi_only_ssids_permissions_action),
-                onAction = onSyncWifiOnlyPermissionsAction
-            ) {
-                Column {
-                    if (!canAccessWifiSsid)
-                        Text(stringResource(R.string.settings_sync_wifi_only_ssids_permissions_required))
-                    Text(
-                        stringResource(
-                            R.string.wifi_permissions_background_location_disclaimer, stringResource(
-                                R.string.app_name)
-                        ),
-                        style = MaterialTheme.typography.bodyMedium
-                    )
-                }
-            }
+//DDU wifiOnly deaktivieren
+//        SwitchSetting(
+//            icon = Icons.Default.Wifi,
+//            name = stringResource(R.string.settings_sync_wifi_only),
+//            summaryOn = stringResource(R.string.settings_sync_wifi_only_on),
+//            summaryOff = stringResource(R.string.settings_sync_wifi_only_off),
+//            checked = syncOnlyOnWifi,
+//            onCheckedChange = onUpdateSyncOnlyOnWifi
+//        )
+//
+//        var showWifiOnlySsidsDialog by remember { mutableStateOf(false) }
+//        Setting(
+//            icon = null,
+//            name = stringResource(R.string.settings_sync_wifi_only_ssids),
+//            enabled = syncOnlyOnWifi,
+//            summary =
+//            if (onlyOnSsids != null)
+//                stringResource(R.string.settings_sync_wifi_only_ssids_on, onlyOnSsids.joinToString(", "))
+//            else
+//                stringResource(R.string.settings_sync_wifi_only_ssids_off),
+//            onClick = {
+//                showWifiOnlySsidsDialog = true
+//            }
+//        )
+//        if (showWifiOnlySsidsDialog)
+//            EditTextInputDialog(
+//                title = stringResource(R.string.settings_sync_wifi_only_ssids_message),
+//                initialValue = onlyOnSsids?.joinToString(", ") ?: "",
+//                onValueEntered = { newValue ->
+//                    val newSsids = newValue.split(',')
+//                        .map { it.trim() }
+//                        .distinct()
+//                    onUpdateOnlyOnSsids(newSsids)
+//                    showWifiOnlySsidsDialog = false
+//                },
+//                onDismiss = { showWifiOnlySsidsDialog = false }
+//            )
+//
+//        if (LocalInspectionMode.current || onlyOnSsids != null)
+//            ActionCard(
+//                icon = if (!canAccessWifiSsid) Icons.Default.SyncProblem else Icons.Default.Info,
+//                actionText = stringResource(R.string.settings_sync_wifi_only_ssids_permissions_action),
+//                onAction = onSyncWifiOnlyPermissionsAction
+//            ) {
+//                Column {
+//                    if (!canAccessWifiSsid)
+//                        Text(stringResource(R.string.settings_sync_wifi_only_ssids_permissions_required))
+//                    Text(
+//                        stringResource(
+//                            R.string.wifi_permissions_background_location_disclaimer, stringResource(
+//                                R.string.app_name)
+//                        ),
+//                        style = MaterialTheme.typography.bodyMedium
+//                    )
+//                }
+//            }
 
         SwitchSetting(
             icon = null,
@@ -691,18 +691,18 @@ fun AccountSettingsScreen_Preview() {
             onNavUp = {},
 
             // Sync settings
-            canAccessWifiSsid = true,
-            onSyncWifiOnlyPermissionsAction = {},
+            //DDU wifiOnly deaktivieren canAccessWifiSsid = true,
+            //DDU wifiOnly deaktivieren onSyncWifiOnlyPermissionsAction = {},
             contactsSyncInterval = 80000L,
             onUpdateContactsSyncInterval = {},
             calendarSyncInterval = 50000L,
             onUpdateCalendarSyncInterval = {},
             tasksSyncInterval = 900000L,
             onUpdateTasksSyncInterval = {},
-            syncOnlyOnWifi = true,
-            onUpdateSyncOnlyOnWifi = {},
-            onlyOnSsids = listOf("HeyWifi", "Another"),
-            onUpdateOnlyOnSsids = {},
+            //DDU wifiOnly deaktivieren syncOnlyOnWifi = true,
+            //DDU wifiOnly deaktivieren onUpdateSyncOnlyOnWifi = {},
+            //DDU wifiOnly deaktivieren onlyOnSsids = listOf("HeyWifi", "Another"),
+            //DDU wifiOnly deaktivieren onUpdateOnlyOnSsids = {},
             ignoreVpns = true,
             onUpdateIgnoreVpns = {},
 

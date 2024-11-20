@@ -237,29 +237,33 @@ class AccountSettings @AssistedInject constructor(
         return false
     }
 
-    fun getSyncWifiOnly() =
-        if (settingsManager.containsKey(KEY_WIFI_ONLY))
-            settingsManager.getBoolean(KEY_WIFI_ONLY)
-        else
-            accountManager.getUserData(account, KEY_WIFI_ONLY) != null
+    fun getSyncWifiOnly() = false
+    //DDU wifiOnly deaktivieren
+//        if (settingsManager.containsKey(KEY_WIFI_ONLY))
+//            settingsManager.getBoolean(KEY_WIFI_ONLY)
+//        else
+//            accountManager.getUserData(account, KEY_WIFI_ONLY) != null
 
     fun setSyncWiFiOnly(wiFiOnly: Boolean) {
-        accountManager.setAndVerifyUserData(account, KEY_WIFI_ONLY, if (wiFiOnly) "1" else null)
-
-        // update sync workers (needs already updated wifi-only flag in AccountSettings)
-        for (authority in SyncUtils.syncAuthorities(context))
-            updatePeriodicSyncWorker(authority, getSyncInterval(authority), wiFiOnly)
+        //DDU wifiOnly deaktivieren
+//        accountManager.setAndVerifyUserData(account, KEY_WIFI_ONLY, if (wiFiOnly) "1" else null)
+//
+//        // update sync workers (needs already updated wifi-only flag in AccountSettings)
+//        for (authority in SyncUtils.syncAuthorities(context))
+//            updatePeriodicSyncWorker(authority, getSyncInterval(authority), wiFiOnly)
     }
 
-    fun getSyncWifiOnlySSIDs(): List<String>? =
-        if (getSyncWifiOnly()) {
-            val strSsids = if (settingsManager.containsKey(KEY_WIFI_ONLY_SSIDS))
-                settingsManager.getString(KEY_WIFI_ONLY_SSIDS)
-            else
-                accountManager.getUserData(account, KEY_WIFI_ONLY_SSIDS)
-            strSsids?.split(',')
-        } else
-            null
+    fun getSyncWifiOnlySSIDs(): List<String>? = null
+    //DDU wifiOnly deaktivieren
+//        if (getSyncWifiOnly()) {
+//            val strSsids = if (settingsManager.containsKey(KEY_WIFI_ONLY_SSIDS))
+//                settingsManager.getString(KEY_WIFI_ONLY_SSIDS)
+//            else
+//                accountManager.getUserData(account, KEY_WIFI_ONLY_SSIDS)
+//            strSsids?.split(',')
+//        } else
+//            null
+    
     fun setSyncWifiOnlySSIDs(ssids: List<String>?) =
         accountManager.setAndVerifyUserData(account, KEY_WIFI_ONLY_SSIDS, ssids?.joinToString(",").trimToNull())
 
