@@ -18,7 +18,7 @@ android {
     defaultConfig {
         applicationId = "com.teamintern.tisync"
 
-        versionCode = 404030200
+        versionCode = 404030202
         versionName = "4.4.3.2"
 
         setProperty("archivesBaseName", "TISync-ose-$versionName")
@@ -26,7 +26,7 @@ android {
         minSdk = 24        // Android 7.0
         targetSdk = 35     // Android 15
 
-        testInstrumentationRunner = "com.teamintern.tisync.HiltTestRunner"
+        testInstrumentationRunner = "at.bitfire.davdroid.HiltTestRunner"
     }
 
     java {
