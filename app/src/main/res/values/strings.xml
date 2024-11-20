@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?><resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- common strings -->
-    <string name="app_name" translatable="false">DAVx⁵</string>
+    <string name="app_name" translatable="false">TISync</string>
 
     <string name="account_invalid">Account does not exist (anymore)</string>
-    <string name="account_type" translatable="false">bitfire.at.davdroid</string>
-    <string name="account_type_address_book" translatable="false">at.bitfire.davdroid.address_book</string>
-    <string name="account_title_address_book">DAVx⁵ Address book</string>
-    <string name="address_books_authority" translatable="false">at.bitfire.davdroid.addressbooks</string>
+    <string name="account_type" translatable="false">net.teamintern.tisync</string>
+    <string name="account_type_address_book" translatable="false">net.teamintern.tisync.address_book</string>
+    <string name="account_title_address_book">TISync Address book</string>
+    <string name="address_books_authority" translatable="false">net.teamintern.tisync.addressbooks</string>
     <string name="address_books_authority_title">Address books</string>
     <string name="dialog_delete">Delete</string>
     <string name="dialog_remove">Remove</string>
@@ -143,7 +143,7 @@
     <string name="account_list_manage_battery_saver">Manage battery saver</string>
     <string name="account_list_low_storage">Storage space low. Android will not sync local changes immediately, but during the next regular sync.</string>
     <string name="account_list_manage_storage">Manage storage</string>
-    <string name="account_list_welcome">Welcome to DAVx⁵!</string>
+    <string name="account_list_welcome">Welcome to TISync!</string>
     <string name="account_list_empty">Connect to your server and keep your calendars and contacts synchronized.</string>
     <string name="accounts_sync_all">Sync all accounts</string>
 
@@ -477,7 +477,7 @@
     <string name="webdav_provider_root_title">WebDAV mount</string>
 
     <!-- sync -->
-    <string name="sync_error_permissions">DAVx⁵ permissions</string>
+    <string name="sync_error_permissions">TISync permissions</string>
     <string name="sync_error_permissions_text">Additional permissions required</string>
     <string name="sync_error_tasks_too_old">%s too old</string>
     <string name="sync_error_tasks_required_version">Minimum required version: %1$s</string>

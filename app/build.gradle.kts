@@ -16,17 +16,17 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "at.bitfire.davdroid"
+        applicationId = "net.teamintern.tisync"
 
         versionCode = 404030200
         versionName = "4.4.3.2"
 
-        setProperty("archivesBaseName", "davx5-ose-$versionName")
+        setProperty("archivesBaseName", "TISync-ose-$versionName")
 
         minSdk = 24        // Android 7.0
         targetSdk = 35     // Android 15
 
-        testInstrumentationRunner = "at.bitfire.davdroid.HiltTestRunner"
+        testInstrumentationRunner = "net.teamintern.tisync.HiltTestRunner"
     }
 
     java {

@@ -57,7 +57,7 @@ class UrlLoginModel @AssistedInject constructor(
 
     init {
         uiState = UiState(
-            url = initialLoginInfo.baseUri?.toString()?.removePrefix("https://") ?: "",
+            url = initialLoginInfo.baseUri?.toString()?.removePrefix("https://") ?: "teamintern.net",//DDU
             username = initialLoginInfo.credentials?.username ?: "",
             password = initialLoginInfo.credentials?.password ?: ""
         )
