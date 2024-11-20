@@ -53,6 +53,7 @@
   <string name="intro_open_source_details">Infos zum Mithelfen/Spenden</string>
   <string name="intro_open_source_dont_show">In nächster Zeit nicht anzeigen</string>
   <!--PermissionsActivity-->
+  <string name="intro_next">Weiter</string>
   <string name="permissions_title">Rechteverwaltung</string>
   <string name="permissions_text">%s benötigt Berechtigungen, um ordnungsgemäß zu funktionieren.</string>
   <string name="permissions_all_title">Alles darunter</string>
@@ -89,6 +90,7 @@
   <string name="wifi_permissions_background_location_permission_on">Standort-Zugriff eingestellt auf: %s</string>
   <string name="wifi_permissions_background_location_permission_off">Standort-Zugriff nicht eingestellt auf: %s</string>
   <string name="wifi_permissions_background_location_disclaimer">%s verwendet die Standort-Berechtigung ausschließlich zum Bestimmen der aktuellen WLAN-SSID für SSID-beschränkte Accounts. Dies findet auch statt, wenn die App geschlossen ist bzw. im Hintergrund läuft. Standortdaten werden weder gesammelt, gespeichert, verarbeitet noch irgendwohin gesendet.</string>
+  <string name="wifi_permissions_background_location_disclaimer2">Alle Standortdaten (nur WLAN-SSID) werden nur lokal verwendet und nirgendwohin gesendet.</string>
   <string name="wifi_permissions_location_enabled">Standort-Dienst immer aktiviert</string>
   <string name="wifi_permissions_location_enabled_on">Standort-Dienst aktiv</string>
   <string name="wifi_permissions_location_enabled_off">Standort-Dienst inaktiv</string>
@@ -129,6 +131,7 @@
   <string name="account_list_manage_battery_saver">Akkusparen verwalten</string>
   <string name="account_list_low_storage">Wenig Speicherplatz. Android wird lokale Änderungen nicht sofort synchronisieren, sondern bei der nächsten regulären Synchronisierung.</string>
   <string name="account_list_manage_storage">Speicherplatz verwalten</string>
+  <string name="account_list_welcome">Wilkommen bei TISync</string>
   <string name="account_list_empty">Herzlich willkommen!\n\nSie können jetzt ein CalDAV/CardDAV-Konto hinzufügen.</string>
   <string name="accounts_sync_all">Alle Konten synchronisieren</string>
   <!--RefreshCollectionsWorker-->
@@ -183,6 +186,7 @@
   <string name="app_settings_tasks_provider">Aufgaben-App</string>
   <string name="app_settings_tasks_provider_none">Keine kompatible Aufgaben-App gefunden</string>
   <!--AccountScreen-->
+  <string name="app_settings_unifiedpush_no_endpoint">Endpunkt nicht konfiguriert</string>
   <string name="account_carddav">CardDAV</string>
   <string name="account_caldav">CalDAV</string>
   <string name="account_webcal">Webcal</string>
@@ -231,6 +235,7 @@
   <string name="login_base_url_info"><![CDATA[Die Basis-URL wird direkt geprüft, aber <a href="%s">Dienste werden auch ermittelt</a>, anhand von DNS-Einträgen und bekannten URLs.]]></string>
   <string name="login_select_certificate">Zertifikat auswählen</string>
   <string name="login_create_account">Konto anlegen</string>
+  <string name="login_add_account">Konto anlegen</string>
   <string name="login_account_name">Kontoname</string>
   <string name="login_account_avoid_apostrophe">Das Verwenden von Apostrophen (\') scheint auf einigen Geräten Probleme zu verursachen.</string>
   <string name="login_account_name_info">Verwenden Sie Ihre E-Mail-Adresse als Kontonamen, da Android den Kontonamen als ORGANIZER einsetzt. Es kann allerdings keine zwei Konten mit dem gleichen Namen geben.</string>
@@ -238,6 +243,7 @@
   <string name="login_account_name_required">Kontoname wird benötigt</string>
   <string name="login_account_name_already_taken">Kontoname bereits verwendet</string>
   <string name="login_account_not_created">Konto konnte nicht angelegt werden</string>
+  <string name="login_finish">Beenden</string>
   <string name="login_type_advanced">Erweiterte Anmeldung</string>
   <string name="login_no_client_certificate_optional">Kein Client-Zertifikat*</string>
   <string name="login_client_certificate_selected">Client-Zertifikat: %s</string>
@@ -355,6 +361,7 @@
   <string name="collection_synchronization_off">Synchronisierung deaktiviert</string>
   <string name="collection_read_only">Schreibgeschützt</string>
   <string name="collection_read_only_by_server">Schreibgeschützt (durch Server)</string>
+  <string name="collection_read_only_by_setting">Schreibgeschützt</string>
   <string name="collection_read_only_forced">Schreibgeschützt (nur lokal)</string>
   <string name="collection_read_write">Lesen/Schreiben</string>
   <string name="collection_title">Titel</string>
@@ -433,5 +440,6 @@
   <!--widgets-->
   <string name="widget_sync_all">Alles synchronisieren</string>
   <string name="widget_sync_all_accounts">Alle Konten synchronisieren</string>
+  <string name="login_account_not_added">Konto konnte nicht angelegt werden</string>
   <!--cert4android-->
 </resources>
